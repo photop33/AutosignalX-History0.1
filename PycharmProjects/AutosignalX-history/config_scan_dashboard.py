@@ -1,0 +1,8 @@
+SCAN_FROM = "2023-05-26 00:00"
+SCAN_TO = "2023-05-31 00:00"
+INTERVAL = "1d"
+VOLATILITY_THRESHOLD = 0.0
+PCT_CHANGE_THRESHOLD = 0.15
+MIN_VOLUME = 50000
+FILTER_MODE = "AND"
+INDICATOR_CONDITIONS = {'rsi': {'oversold': 30, 'overbought': 70}, 'macd': {'signal_diff_min': 0.0}}
