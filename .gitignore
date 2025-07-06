@@ -7,3 +7,5 @@ venv/
 .DS_Store
 data/
 logs/
+strategy_signals_output.csv
+strategy_signals_master.csv
