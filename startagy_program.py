@@ -5,10 +5,15 @@ import importlib
 import ta
 import sys
 import io
+
 from config import ACTIVE_STRATEGIES, STRATEGY_THRESHOLDS, symbol as config_symbol, interval, start_time_str, end_time_str
 
 print("Start Startagy")
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
+
+
+
+
 
 # === הגדרות קבועות לחישוב SL/TP ===
 SL_MULTIPLIER = 1.5
