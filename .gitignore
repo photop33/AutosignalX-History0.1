@@ -6,3 +6,4 @@ venv/
 .envrc
 .DS_Store
 data/
+logs/

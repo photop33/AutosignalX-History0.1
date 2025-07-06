@@ -6,8 +6,11 @@ VOLATILITY_THRESHOLD = 0.0
 PCT_CHANGE_THRESHOLD = 0.03
 MIN_VOLUME = 50000
 FILTER_MODE = "AND"
+
+
+#Strategy config
 symbol = "BTCUSDT"
-interval = "5m"
+interval = "1h"
 start_time_str = "2024-01-01 00:00"
 end_time_str = "2024-12-31 00:00"
 INDICATOR_CONDITIONS = {"rsi": {'oversold': 30, 'overbought': 70}, "macd": {'signal_diff_min': 0.0}}

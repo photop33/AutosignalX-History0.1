@@ -168,14 +168,14 @@ st.divider()
 
 # --- הרצת הסקריפטים ---
 if st.button("🚀 הרץ ניטור וסגירת סיגנלים"):
-    with st.spinner("🧠 מריץ startagy_program.py..."):
+    with st.spinner("🧠 מריץ 2-startagy_program.py..."):
         os.makedirs("logs", exist_ok=True)
         with open(LOG_PATH, "w", encoding="utf-8") as f:
-            subprocess.run([PYTHON_PATH, "startagy_program.py"], stdout=f, stderr=subprocess.STDOUT, text=True)
+            subprocess.run([PYTHON_PATH, "2-startagy_program.py"], stdout=f, stderr=subprocess.STDOUT, text=True)
 
-    with st.spinner("📈 מריץ st_or_tp.py..."):
+    with st.spinner("📈 מריץ 3-st_or_tp.py..."):
         with open(LOG_PATH, "a", encoding="utf-8") as f:
-            subprocess.run([PYTHON_PATH, "st_or_tp.py"], stdout=f, stderr=subprocess.STDOUT, text=True)
+            subprocess.run([PYTHON_PATH, "3-st_or_tp.py"], stdout=f, stderr=subprocess.STDOUT, text=True)
 
     st.subheader("📄 פלט הרצה:")
     with open(LOG_PATH, "r", encoding="utf-8") as f:

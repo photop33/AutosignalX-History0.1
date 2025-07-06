@@ -4,9 +4,9 @@ import os
 import io
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
 scripts = [
-    ("scan.py",          (sys.executable, "scan.py")),
-    ("startagy_program.py", (sys.executable, "startagy_program.py")),
-    ("st_or_tp.py",      (sys.executable, "st_or_tp.py")),
+    ("1-scan.py",          (sys.executable, "1-scan.py")),
+    ("2-startagy_program.py", (sys.executable, "2-startagy_program.py")),
+    ("3-st_or_tp.py",      (sys.executable, "3-st_or_tp.py")),
     ("app.py (Streamlit)", ("streamlit", "run", os.path.join(sys.executable, "app.py"))),
 ]
 

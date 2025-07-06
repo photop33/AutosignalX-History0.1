@@ -109,9 +109,9 @@ st.divider()  # מפריד יפה בין אזור הגדרות לאזור ריצ
 st.header("🚀 הרצת סריקה בפועל")
 st.code(f"🔧 Python Executable: {PYTHON_PATH}")
 
-if st.button("🚀 הרץ סריקה (scan.py)"):
+if st.button("🚀 הרץ סריקה (1-scan.py)"):
     with st.spinner("מריץ סריקה..."):
-        result = subprocess.run([PYTHON_PATH, "scan.py"], capture_output=True, text=True)
+        result = subprocess.run([PYTHON_PATH, "1-scan.py"], capture_output=True, text=True)
         st.subheader("📄 פלט ההרצה:")
         try:
             decoded_out = result.stdout.encode().decode('unicode_escape')
