@@ -10,6 +10,10 @@ from config import ACTIVE_STRATEGIES, STRATEGY_THRESHOLDS, symbol as config_symb
 print("Start Startagy")
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
 
+
+
+
+
 # === הגדרות קבועות לחישוב SL/TP ===
 SL_MULTIPLIER = 1.5
 RR_RATIO = 2.0
